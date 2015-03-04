@@ -1,0 +1,25 @@
+Set up prequisite packages. Assumes setuptools is already installed.
+    sudo ./dev_initial_setup.sh
+
+Set up virtual environment
+    source ./dev_use_virtual_env.sh
+
+Running Djano web app
+    python manage.py runserver
+
+Execute tests
+    ./run_tests.sh
+
+    Output should be similar to:
+
+        test_fib (test_fib.TestFib) ... ok
+        test_fib_fail (test_fib.TestFib) ... ok
+        test_fib (test_fib_api.TestFibApi) ... ok
+        test_fib_negative_fail (test_fib_api.TestFibApi) ... ok
+        test_fib_nonnumeric_fail (test_fib_api.TestFibApi) ... ok
+        test_fib_post_fail (test_fib_api.TestFibApi) ... ok
+
+        ----------------------------------------------------------------------
+        Ran 6 tests in 0.027s
+
+        OK
